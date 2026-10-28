@@ -373,7 +373,7 @@ Como as peças se conectam: a CLI (ou o assistente) chama o **orquestrador**, qu
 
 ## Autor
 
-Desenvolvido por **kactxn.dev**
+Desenvolvido por **Johnata.dev**
 Cloud & DevSecOps · AWS · Terraform · Segurança da Informação
 
 - GitHub: [github.com/kctxdev](https://github.com/kctxdev)
