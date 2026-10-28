@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentinelcloud"
+version = "0.1.0"
+description = "Scanner de seguranca para ambientes AWS (S3, Security Groups, IAM, CloudTrail)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "kactxn.dev" }]
+dependencies = ["boto3>=1.34"]
+
+[project.scripts]
+sentinelcloud = "apps.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src", "."]
+include = ["sentinelcloud*", "apps*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+markers = ["integration: testes que dependem de credenciais AWS"]

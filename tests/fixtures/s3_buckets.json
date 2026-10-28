@@ -1,0 +1,7 @@
+[
+  {"name": "bucket-inseguro", "public_access_block": null, "encryption": null, "logging": false},
+  {"name": "bucket-seguro",
+   "public_access_block": {"BlockPublicAcls": true, "IgnorePublicAcls": true,
+                           "BlockPublicPolicy": true, "RestrictPublicBuckets": true},
+   "encryption": {"SSEAlgorithm": "AES256"}, "logging": true}
+]
